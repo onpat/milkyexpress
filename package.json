@@ -5,10 +5,16 @@
   "type": "module",
   "scripts": {
     "lint": "pnpm -r lint",
-    "lint:fix": "pnpm -r lint:fix"
+    "lint:fix": "pnpm -r lint:fix",
+    "dev": "pnpm --filter=milky-react --filter=milky-express --parallel dev",
+    "dev:milky-react": "pnpm --filter=milky-react dev",
+    "dev:milky-express": "pnpm --filter=milky-express dev"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.5.1",
-    "eslint": "^10.13.0"
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "eslint": "^10.13.0",
+    "tsx": "^4.23.15"
   }
 }

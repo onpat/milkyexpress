@@ -4,7 +4,9 @@ packages:
   - 'milky-express'
   
 allowBuilds:
+  '@firebase/util': true
   esbuild: true
+  protobufjs: true
 
 minimumReleaseAgeExclude:
   - eslint@10.13.0

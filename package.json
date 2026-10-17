@@ -1,11 +1,11 @@
 {
-  "name": "milkys",
+  "name": "milkyexpress",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.5.1",

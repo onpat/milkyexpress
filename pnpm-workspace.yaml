@@ -3,3 +3,5 @@ packages:
   - 'milky-react'
   - 'milky-express'
   
+minimumReleaseAgeExclude:
+  - eslint@10.13.0

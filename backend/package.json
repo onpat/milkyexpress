@@ -1,0 +1,13 @@
+{
+  "name": "milky-express",
+  "private": true,
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

@@ -7,13 +7,18 @@
     }
   },
   "forwardPorts": [3000, 5173],
-  "postCreateCommand": "pnpm install",
+  "postCreateCommand": "pnpm install && mkdir -p ~/.codex && cp /tmp/codex-auth.json ~/.codex/auth.json",
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "christian-kohler.path-intellisense",
+        "humao.rest-client",
+        "formulahendry.auto-rename-tag"
       ]
     }
-  }
+  },
+  "mounts": [
+    "source=${env:HOME}/.codex/auth.json,target=/tmp/codex-auth.json,type=bind"
+  ]
 }
